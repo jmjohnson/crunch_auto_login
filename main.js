@@ -10,7 +10,7 @@ var makeXhrPromise = function() {
 	}).then(function(credentials) {
 		return new Promise(function(resolve) {
 			var xhr = new XMLHttpRequest();
-	        // Make a call to http://www.crunch.com/library/ajax/login.cfm
+			// Make a call to http://www.crunch.com/library/ajax/login.cfm
 			xhr.open("POST", "http://www.crunch.com/library/ajax/login.cfm");
 			xhr.onload = function() { resolve(xhr.status === 200); };
 			// Form data: https://developer.mozilla.org/en-US/docs/Web/Guide/Using_FormData_Objects?redirectlocale=en-US&redirectslug=Web%2FAPI%2FFormData%2FUsing_FormData_Objects
